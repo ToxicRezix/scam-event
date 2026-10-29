@@ -1,0 +1,5 @@
+fetch("https://discord-proxy.yahn5500.workers.dev/", {
+  method: "POST",
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify({test: true, embeds:[{title:"test manuel", color:0x7CFF00}]})
+}).then(r => r.json()).then(console.log)
